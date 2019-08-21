@@ -11,5 +11,17 @@ require('./bootstrap');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+import React from 'react';
+import { render } from 'react-dom';
+import { Router, Route, browserHistory } from 'react-router';
 
-require('./components/Example');
+
+import Master from './components/Master';
+
+render(
+    <Router history={browserHistory}>
+        <Route path="/" component={Master} >
+        </Route>
+    </Router>,
+    document.getElementById('crud-app')
+);
