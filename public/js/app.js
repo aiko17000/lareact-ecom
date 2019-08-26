@@ -73155,6 +73155,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/es/index.js");
 /* harmony import */ var _components_Master__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Master */ "./resources/js/components/Master.js");
 /* harmony import */ var _components_DisplayProduct__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/DisplayProduct */ "./resources/js/components/DisplayProduct.js");
+/* harmony import */ var _components_CartItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/CartItem */ "./resources/js/components/CartItem.js");
+/* harmony import */ var _components_Cart__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Cart */ "./resources/js/components/Cart.js");
+/* harmony import */ var _components_Cart__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_Cart__WEBPACK_IMPORTED_MODULE_6__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes React and other helpers. It's a great starting point while
@@ -73173,6 +73176,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
+
+
 Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_2__["Router"], {
   history: react_router__WEBPACK_IMPORTED_MODULE_2__["browserHistory"]
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_2__["Route"], {
@@ -73180,6 +73185,9 @@ Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED
   component: _components_Master__WEBPACK_IMPORTED_MODULE_3__["default"]
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_2__["Route"], {
   path: "/display-item",
+  component: _components_DisplayProduct__WEBPACK_IMPORTED_MODULE_4__["default"]
+}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+  path: "/cart",
   component: _components_DisplayProduct__WEBPACK_IMPORTED_MODULE_4__["default"]
 }))), document.getElementById('crud-app'));
 
@@ -73240,6 +73248,100 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/Cart.js":
+/*!*****************************************!*\
+  !*** ./resources/js/components/Cart.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\wamp64\\www\\lareact-ecom\\resources\\js\\components\\Cart.js: Unexpected token, expected \"...\" (39:20)\n\n\u001b[0m \u001b[90m 37 | \u001b[39m                \u001b[33m<\u001b[39m\u001b[33mh3\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"card-title\"\u001b[39m\u001b[33m>\u001b[39m\u001b[33mCart\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mh3\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mhr\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 | \u001b[39m                {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 | \u001b[39m                    products\u001b[33m.\u001b[39mmap((product\u001b[33m,\u001b[39m index) \u001b[33m=>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 | \u001b[39m                        \u001b[33m<\u001b[39m\u001b[33mCartItem\u001b[39m product\u001b[33m=\u001b[39m{product} remove\u001b[33m=\u001b[39m{\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mremoveFromCart} key\u001b[33m=\u001b[39m{index}\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 41 | \u001b[39m                } \u001b[33m<\u001b[39m\u001b[33mhr\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 42 | \u001b[39m                { products\u001b[33m.\u001b[39mlength \u001b[33m?\u001b[39m\u001b[0m\n    at Object.raise (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:6325:17)\n    at Object.unexpected (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:7642:16)\n    at Object.expect (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:7628:28)\n    at Object.jsxParseAttribute (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:3463:12)\n    at Object.jsxParseOpeningElementAfterName (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:3490:28)\n    at Object.jsxParseOpeningElementAt (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:3483:17)\n    at Object.jsxParseElementAt (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:3515:33)\n    at Object.jsxParseElementAt (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:3531:32)\n    at Object.jsxParseElement (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:3589:17)\n    at Object.parseExprAtom (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:3596:19)\n    at Object.parseExprSubscripts (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8412:23)\n    at Object.parseMaybeUnary (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8392:21)\n    at Object.parseExprOps (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8267:23)\n    at Object.parseMaybeConditional (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8240:23)\n    at Object.parseMaybeAssign (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8187:21)\n    at Object.parseParenAndDistinguishExpression (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8978:28)\n    at Object.parseExprAtom (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8762:21)\n    at Object.parseExprAtom (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:3601:20)\n    at Object.parseExprSubscripts (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8412:23)\n    at Object.parseMaybeUnary (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8392:21)\n    at Object.parseExprOps (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8267:23)\n    at Object.parseMaybeConditional (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8240:23)\n    at Object.parseMaybeAssign (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8187:21)\n    at Object.parseExpression (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:8135:23)\n    at Object.parseReturnStatement (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:10198:28)\n    at Object.parseStatementContent (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:9877:21)\n    at Object.parseStatement (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:9829:17)\n    at Object.parseBlockOrModuleBlockBody (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:10405:25)\n    at Object.parseBlockBody (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:10392:10)\n    at Object.parseBlock (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:10376:10)\n    at Object.parseFunctionBody (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:9424:24)\n    at Object.parseFunctionBodyAndFinish (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:9394:10)\n    at Object.parseMethod (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:9348:10)\n    at Object.pushClassMethod (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:10804:30)\n    at Object.parseClassMemberWithIsStatic (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:10729:12)\n    at Object.parseClassMember (C:\\wamp64\\www\\lareact-ecom\\node_modules\\@babel\\parser\\lib\\index.js:10668:10)");
+
+/***/ }),
+
+/***/ "./resources/js/components/CartItem.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/CartItem.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var CartItem =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(CartItem, _Component);
+
+  function CartItem(props) {
+    var _this;
+
+    _classCallCheck(this, CartItem);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(CartItem).call(this, props));
+    _this.state = {
+      quantity: 1
+    };
+    return _this;
+  }
+
+  _createClass(CartItem, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var product = this.props.product;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card",
+        style: {
+          marginBottom: "10px"
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "card-title"
+      }, product.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        className: "card-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "price: "), "$", product.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "card-text text-success"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Quantity: "), product.qty), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn-sm btn-warning float-right",
+        onClick: function onClick() {
+          return _this2.props.remove(product);
+        }
+      }, "Remove from cart")));
+    }
+  }]);
+
+  return CartItem;
+}(Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (CartItem);
 
 /***/ }),
 
@@ -73392,23 +73494,30 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-        className: "navbar navbar-default"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-fluid"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "navbar-header"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "navbar-brand",
-        href: "https://itsolutionstuff.com"
-      }, "ItSolutionStuff.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: "nav navbar-nav"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/"
-      }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "add-item"
-      }, "Create Product")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        className: "my-0 mr-md-auto font-weight-normal"
+      }, "Company name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+        className: "my-2 my-md-0 mr-md-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "p-2 text-dark",
         to: "display-item"
-      }, "Products"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.children));
+      }, "Products"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "p-2 text-dark",
+        href: "#"
+      }, "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "p-2 text-dark",
+        href: "#"
+      }, "Enterprise"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "p-2 text-dark",
+        href: "#"
+      }, "Support"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "p-2 text-dark",
+        href: "#"
+      }, "Pricing")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        className: "btn btn-outline-primary",
+        to: "/cart"
+      }, "Cart")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.children));
     }
   }]);
 
@@ -73503,7 +73612,7 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-3"
-      }, this.props.obj.name, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " allo", this.props.obj.description, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, this.props.obj.name, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.props.obj.description, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "edit/" + this.props.obj.id,
         className: "btn btn-primary"
       }, "Edit"));

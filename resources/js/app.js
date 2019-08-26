@@ -18,11 +18,14 @@ import { Router, Route, browserHistory } from 'react-router';
 
 import Master from './components/Master';
 import DisplayProduct from './components/DisplayProduct';
+import CartItem from './components/CartItem';
+import Cart from './components/Cart';
 
 render(
     <Router history={browserHistory}>
         <Route path="/" component={Master} >
             <Route path="/display-item" component={DisplayProduct} />
+            <Route path="/cart" component={DisplayProduct} />
         </Route>
     </Router>,
     document.getElementById('crud-app')

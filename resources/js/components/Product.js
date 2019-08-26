@@ -19,7 +19,7 @@ class Product extends Component {
 
             <div className="col-3">
                 {this.props.obj.name}
-                <br/> allo
+                <br/>
                     {this.props.obj.description}
                     <br/>
                         <Link to={"edit/"+this.props.obj.id} className="btn btn-primary">Edit</Link>
